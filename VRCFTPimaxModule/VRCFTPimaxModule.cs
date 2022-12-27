@@ -225,6 +225,8 @@ namespace VRCFTPimaxModule
 			float y = 0f - (pupilCenterLeftY + pupilCenterRightY / 2f);
 			UnifiedTrackingData.LatestEyeData.Left.Look.y = y;
 			UnifiedTrackingData.LatestEyeData.Right.Look.y = y;
+			
+			UnifiedTrackingData.LatestEyeData.Combined.Look.y = -0.2f - (pupilCenterLeftY + pupilCenterRightY / 2f)
 		}
 		
 		private static float NormalizeFloatAroundZero(float input, MinMaxRange inputRange)
